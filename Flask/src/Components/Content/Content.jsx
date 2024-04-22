@@ -37,7 +37,7 @@ const Content = (props) => {
       if (data) {
         formData.append('inputData', data);
       }
-      axios.post('http://localhost:8080/email_data', formData)
+      axios.post('https://promarketer-production-deployment.onrender.com/email_data', formData)
       .then(response => {
         setRes(response.data.message); // Access the message from the response
       })
@@ -58,7 +58,7 @@ const Content = (props) => {
     if(content){
       const formData = new FormData();
       formData.append('inputContent', content);
-      axios.post('http://localhost:8080/spam_data', formData)
+      axios.post('https://promarketer-production-deployment.onrender.com/spam_data', formData)
       .then(response => {
         setRes(response.data.message); // Access the message from the response
       })

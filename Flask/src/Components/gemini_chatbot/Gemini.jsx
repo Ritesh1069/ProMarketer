@@ -20,7 +20,7 @@ const Gemini = () => {
     if(data){
       const formData = new FormData();
       formData.append('inputData', data);
-      axios.post('http://localhost:8080/ai_data', formData)
+      axios.post('https://promarketer-production-deployment.onrender.com/ai_data', formData)
       .then(response => {
         setRes(response.data.message); // Access the message from the response
       })

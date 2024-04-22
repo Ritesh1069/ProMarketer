@@ -39,7 +39,7 @@ const Whatsapp = () => {
       if (data) {
         formData.append('inputData', data);
       }
-      axios.post('http://localhost:8080/wapp_data', formData)
+      axios.post('https://promarketer-production-deployment.onrender.com/wapp_data', formData)
       .then(response => {
         setRes(response.data.message); // Access the message from the response
       })
