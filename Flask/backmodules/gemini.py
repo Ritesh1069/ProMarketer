@@ -1,7 +1,7 @@
 import google.generativeai as genai
 
 def prompt_msg(txt):
-  genai.configure(api_key="AIzaSyAEEt8P9br-My5d_HFm9ne3tOxNRwxvG_M")
+  genai.configure(api_key="AIzaSyB3MjEEuiZPVKmA_XjuYN55Y7EcGAdhdDo")
   
   # Set up the model
   generation_config = {
